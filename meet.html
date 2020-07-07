@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/20bdf30e52.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/umar.css">
+    <title>Meet People</title>
+</head>
+
+<body class="meet_bg">
+
+    <header class="w3-container top ">
+        <i class="fas fa-arrow-left ig w3-left" onclick="back()"></i>
+        <i class="fas fa-user-cog  ig w3-right w3 "></i>
+        <!-- <img src="icon_img/settings.PNG" alt="" class="w3-right w3 w3-padding ig"> -->
+        <p></p>
+        <h3 class="w3-text-white top-margin w3-left"> Kwasu Meet </h3>
+        <p></p>
+    </header>
+    <div class="content-box">
+
+        <div class="dash-content">
+
+
+            <div class="box w3-center" id="rep" onclick="class_rep()">
+                <img src="icon_img/Courses.PNG" alt="" class="w3-padding w3-mrgin-top" height="80%">
+                <p class="w3-center d-text">
+                    Class rep
+                </p>
+            </div>
+
+            <div class="box w3-center" onclick="assitance_rep()">
+                <img src="icon_img/time-table.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <p class="w3-center d-text">
+                    Ass.Class rep
+
+                </p>
+            </div>
+
+        </div>
+        <div class="dash-content">
+
+            <div class="box w3-center" onclick="LA()">
+                <img src="icon_img/pdf.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <p class="w3-center d-text">
+                    L.A
+                </p>
+            </div>
+
+            <div class="box w3-center" onclick="ass_La()">
+                <img src="icon_img/Notes.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <p class="w3-center d-text">
+                    Ass. LA
+                </p>
+            </div>
+        </div>
+
+        <div class="last-dash-content">
+            <div class="box w3-center" onclick="vc()">
+                <img src="icon_img/Test.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <p class="w3-center d-text">
+                    VC
+                </p>
+            </div>
+
+            <div class="box w3-center" onclick="cit()">
+                <img src="icon_img/Department.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <p class="w3-center d-text">
+                    CIT
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <!----------------meeting page pop up------------------->
+    <div class="w3-modal" id="c_rep">
+        <div class="w3-modal-content w3-animate-zoom w3-round-xlarge">
+            <div class="con">
+                <span id="close" class=" w3-display-topright w3-round-xlarge "
+                    onclick="document.getElementById('c_rep').style.display='none'">X</span>
+                <h3 class=" w3-padding w3-round-xlarge"> Class Rep </h3>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box"
+                    onclick="location.href= 'tel:07010602957' ">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-envelope-open "></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-sms"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------meeting Ass class rep------------------->
+
+    <div class="w3-modal" id="ass_rep">
+        <div class="w3-modal-content w3-animate-zoom w3-round-xlarge">
+            <div class="con">
+                <span id="close" class=" w3-display-topright "
+                    onclick="document.getElementById('ass_rep').style.display='none'">X</span>
+                <h3 class=" w3-padding w3-round-xlarge"> Assitance Class Rep </h3>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-envelope-open "></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-sms"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------meeting L.A------------------->
+
+    <div class="w3-modal" id="Level-advisor">
+        <div class="w3-modal-content w3-animate-zoom w3-round-xlarge">
+            <div class="con">
+                <span id="close" class=" w3-display-topright "
+                    onclick="document.getElementById('Level-advisor').style.display='none'">X</span>
+                <h3 class=" w3-padding w3-round-xlarge"> Level Advisor </h3>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-envelope-open "></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-sms"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------meeting Assistance L.A------------------->
+    <div class="w3-modal" id="ass_la">
+        <div class="w3-modal-content w3-animate-zoom w3-round-xlarge">
+            <div class="con">
+                <span id="close" class=" w3-display-topright "
+                    onclick="document.getElementById('ass_la').style.display='none'">X</span>
+                <h3 class=" w3-padding w3-round-xlarge"> Assistance Level Advisor </h3>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-envelope-open "></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-sms"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------- V:c ------------------->
+    <div class="w3-modal" id="vc">
+        <div class="w3-modal-content w3-animate-zoom w3-round-xlarge">
+            <div class="con">
+                <span id="close" class=" w3-display-topright "
+                    onclick="document.getElementById('vc').style.display='none'">X</span>
+                <h3 class=" w3-padding w3-round-xlarge"> Vice Chancellor </h3>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-envelope-open "></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-sms"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!---------------- C I T ------------------->
+    <div class="w3-modal" id="cit">
+        <div class="w3-modal-content w3-animate-zoom w3-round-xlarge">
+            <div class="con">
+                <span id="close" class=" w3-display-topright "
+                    onclick="document.getElementById('cit').style.display='none'">X</span>
+                <h3 class=" w3-padding w3-round-xlarge"> CIT </h3>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-envelope-open "></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+
+                <div class="w3-container w3-margin  w3-round-xlarge w3-center c_box">
+                    <i class="fas fa-sms"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function back() {
+            history.back()
+        }
+        function class_rep() {
+            var contact_class_rep = document.getElementById("c_rep");
+            contact_class_rep.style.display = 'block';
+        }
+
+        function assitance_rep() {
+            var contact_class_rep = document.getElementById("ass_rep");
+            contact_class_rep.style.display = 'block';
+        }
+
+
+        function LA() {
+            var contact_class_rep = document.getElementById("Level-advisor");
+            contact_class_rep.style.display = 'block';
+        }
+
+
+        function ass_La() {
+            var contact_class_rep = document.getElementById("ass_la");
+            contact_class_rep.style.display = 'block';
+        }
+
+
+        function vc() {
+            var contact_class_rep = document.getElementById("vc");
+            contact_class_rep.style.display = 'block';
+        }
+
+        function cit() {
+            var contact_class_rep = document.getElementById("cit");
+            contact_class_rep.style.display = 'block';
+        }
+
+    </script>
+</body>
+
+</html>

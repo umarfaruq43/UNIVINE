@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://kit.fontawesome.com/20bdf30e52.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="umar.css">
-    <script src="real-bg_changer.js"></script>
+    <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/umar.css">
     <title>My Dashboard</title>
 </head>
 
-<body id="bgImg">
-
+<body id="bgImg" >
+<div id="sir" style="display: none;">
+    Wellcome, User
+</div>
     <header class="w3-container top ">
-        <!-- <i class="fas fas-settings"></i> -->
-        <img src="settings.PNG" alt="" class="w3-right w3 w3-padding ig">
+        <i class="fas fa-user-cog  ig w3-right w3 "></i>
+        <!-- <img src="icon_img/settings.PNG" alt="" class="w3-right w3 w3-padding ig"> -->
         <h3 class="w3-text-white top-margin w3-left"> My Dashboard </h>
     </header>
     <div class="content-box">
@@ -25,16 +27,14 @@
 
 
             <div class="box w3-center" id="courses" onclick="myCourse()">
-                <img src="Courses.PNG" alt="" class="w3-padding w3-mrgin-top" height="80%">
+                <img src="icon_img/Courses.PNG" alt="" class="w3-padding w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
                     Courses
                 </p>
             </div>
 
-
-
             <div class="box w3-center">
-                <img src="time-table.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <img src="icon_img/time-table.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
                     Time Table
 
@@ -45,30 +45,30 @@
         <div class="dash-content">
 
             <div class="box w3-center">
-                <img src="pdf.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <img src="icon_img/pdf.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
                     PDFs
                 </p>
             </div>
 
-            <div class="box w3-center" onclick="myNote()">
-                <img src="Notes.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+            <div class="box w3-center" onclick="meet()">
+                <img src="icon_img/chat-1.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
-                    Note
+                    Kwasu Meet
                 </p>
             </div>
         </div>
 
         <div class="last-dash-content">
             <div class="box w3-center">
-                <img src="Test.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <img src="icon_img/Test.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
                     Test
                 </p>
             </div>
 
             <div class="box w3-center">
-                <img src="Department.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
+                <img src="icon_img/Department.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
                     Department
                 </p>
@@ -80,13 +80,17 @@
         function myCourse() {
             location.href = "courses.html"
         }
-        function myNote() {
-            location.href = "my_Note.html"
+        function meet() {
+            location.href = "meet.html"
         }
-
-        // var one = ["imges/b_class.jpg", "libary.jpg", "To_do.jpg"]
-        // document.getElementById("bgImg").style.backgroundImage = "url(" + one[Math.floor(Math.random() * one.length)] + ")";
-
+        
+    /*   function greet() {
+           var salute = document.getElementById('sir').innerHTML;
+            alert(salute)
+           
+        }
+    */
+      
 
     </script>
 

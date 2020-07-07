@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://kit.fontawesome.com/20bdf30e52.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="umar.css">
+    <link rel="stylesheet" href="fontawesome-free-5.13.1-web/css/all.min.css">
+    <link rel="stylesheet" href="css/umar.css">
+    <link rel="stylesheet" href="css/w3.css">
     <title>My Courses</title>
 </head>
 
@@ -19,15 +20,15 @@
         </p>
         <nav>
             <ul>
-                <li class="menu">
+                <!-- <li class="menu">
                     <a href=""> All</a>
-                </li>
+                </li> -->
                 <li class="menu">
                     <a href="" class="active"> Ongoing</a>
                 </li>
-                <li class="menu">
+                <!-- <li class="menu">
                     <a href="">Completed</a>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </header>
@@ -35,8 +36,29 @@
     <div class="w3-container ongoing">
         <div class="reading w3-margin w3-container " id="reading_1">
             <h4>Algorithms and Data</h4>
-            <i class="fas fa-ellipsis-v w3-display-right"></i>
+            <span class=" w3-display-right">
+
+                <i class="fas fa-ellipsis-v" onclick="view()"></i>
+
+                <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom go-down"
+                    style="right: 29px; top:0px; ">
+
+                    <a href="#" class="w3-bar-item ">
+                        <i class="far fa-save"></i>
+                        Saved
+                    </a>
+
+                    <a href="#" class="w3-bar-item ">
+
+                        <i class="fas fa-minus-circle"></i>
+                        Remove
+                    </a>
+
+                </div>
+
+            </span>
         </div>
+
         <div class="reading w3-margin w3-container" id="reading_1">
             <h4>Mathematical Model</h4>
 
@@ -55,11 +77,37 @@
             <i class="fas fa-ellipsis-v w3-display-right"></i>
 
         </div>
+
+        <div class="reading w3-margin w3-container" id="reading_1">
+            <h4>Arithmetic Analysis</h4>
+
+            <i class="fas fa-ellipsis-v w3-display-right"></i>
+
+        </div>
     </div>
 
 
+    <div class="bottom">
+        <a href="#" class="b_menu w3-center" onclick="back()">
+            <i class="fas fa-caret-left"></i>
+
+        </a>
+        <a href="myDashboard.html" class="b_menu w3-center">
+            <i class="fas fa-home"></i>
+
+        </a>
+        <a href="#" class="b_menu w3-center">
+            <i class="fas fa-info"></i>
+
+        </a>
+    </div>
 
 
+    <script>
+        function back() {
+            history.back()
+        }
+    </script>
 </body>
 
 </html>
