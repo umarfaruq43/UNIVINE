@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    height:100vh;
+    width: 100%;
+}
+
+/*Student and Admin loginpage*/
+.admin, .student{
+    max-width: 40em;
+    border-radius: 5px;
+}
+
+.body{
+   background: url('../image/tutor.jpg') no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.student{
+}
+.far{
+
+    background-image:linear-gradient(rgb(74, 165, 218, 0.1), rgb(74, 165, 218)), url(../image/student.jpg);
+    background-size: cover;
+}
+
+img{
+    margin-top: 1em;
+    width: 6em;
+}
+
+.stdtLogin{
+    color: rgb(105,5,10);
+    font-weight: bolder;
+}
+
+span a{
+    color:rgb(129, 24, 29);
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 1em;
+}
+a:hover, .checkbox a:hover{
+    color: rgb(37,99,51);
+}
+
+span{
+    margin-top: 1em;
+}
+
+h1,span{
+    color: white;
+    margin-top: 20px;
+}
+
+.adminBtn{
+    background-color: rgb(170, 167, 167);
+    border: none;
+    padding: 7px 20px ;
+    color:#69050A;
+    font-weight: 600;
+    border-radius: 3px;
+    transition-duration: 2s;
+}
+.adminBtn:hover{
+    background-color: #69050A;
+    color: #ffffff;
+}
+
+input[type=text],input[type=password]{
+    padding-left: 40px;
+    border: none;
+    border-bottom: 2px solid rgb(129, 24, 29);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    height: 3em;
+    margin-top: 2em;
+    
+}
+input[type=text]{
+    background-image: url('../icon_img/user2.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+}
+
+input[type=password]{
+    background-image: url('img/lock.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30px;
+}
+
+.checkbox{
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox a {
+    text-decoration: none;
+    color: rgb(129, 24, 29);
+    font-weight: 700;
+}
+label{
+    cursor: pointer;
+    display: inline;
+    color: #69050A;
+    font-weight: 600;
+}
+
+/* .btn{
+    border: 2px solid red;
+    color: white;
+    padding: 1em 4em;
+    border-radius: 50px;
+    background-color: #fff;
+} */
+
+.studentBtn{
+    background-color: #69050A;
+    color: #ffffff;
+    border: none;
+    padding: 7px 20px ;
+    font-weight: 600;
+    border-radius: 3px;
+    transition-duration: 1s;
+}
+.studentBtn:hover{
+    padding: 7px 50px ;
+    font-size: larger;
+}
+
+.homepage{
+    background-image:linear-gradient(rgba(37,99,51, 0.1), rgb(37,99,51)), url(homepage.webp);
+    line-height: 40em;
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.welcome{
+    color: rgb(129, 24, 29);
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 6vw;
+   font-weight: bolder;
+}
+.kwasu{
+    display: block;
+    text-align: center;
+}

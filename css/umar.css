@@ -184,7 +184,9 @@ nav a.active{
     font-size: 1.2em;
 }
 /*********************CONTACT PAGE POP UP EDIT*******************************/
-
+.w3{
+    font-size: 1.1em;
+}
 #close{
     display: block;
     color: white;

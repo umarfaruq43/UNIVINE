@@ -1,0 +1,53 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/sign-up_bg.jpg);
+    background-position: center;
+}
+h1 {
+color: red;
+text-align: center;
+}
+form {
+    margin: auto;
+    text-align: center;
+} 
+.btn{
+    border: none;
+    color: red;
+    padding: .5em 3em;
+    border-radius: 50px;
+}
+h2 {
+    text-align: center;
+    color: black;
+    margin-top: 0;
+}
+h3 {
+    color:black;
+}
+.edit{
+    outline: none;
+    background-color: initial;
+    box-shadow: 1px 1px 5px #fff;
+    color: #fff;
+    
+}
+
+
+.adminBtn{
+    outline: none; 
+    cursor: pointer;
+    background-color:initial;
+    box-shadow: inset 0 0 10px #fff;
+    font-weight: 500;
+    color: #fff;
+    transition-duration: 1s;
+}
+.adminBtn:hover{
+    box-shadow: 0 0 10px #fff;
+    color: red;
+}
+input::placeholder{
+    color: rgb(255, 255, 255);
+}
