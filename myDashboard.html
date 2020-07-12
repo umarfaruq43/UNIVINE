@@ -12,10 +12,10 @@
     <title>My Dashboard</title>
 </head>
 
-<body id="bgImg" >
-<div id="sir" style="display: none;">
-    Wellcome, User
-</div>
+<body id="bgImg">
+    <div id="sir" style="display: none;">
+        Wellcome, User
+    </div>
     <header class="w3-container top ">
         <i class="fas fa-user-cog  ig w3-right w3 "></i>
         <!-- <img src="icon_img/settings.PNG" alt="" class="w3-right w3 w3-padding ig"> -->
@@ -26,7 +26,7 @@
         <div class="dash-content">
 
 
-            <div class="box w3-center" id="courses" onclick="myCourse()">
+            <div class="box w3-center" id="courses" onclick="location.href= 'courses.html'">
                 <img src="icon_img/Courses.PNG" alt="" class="w3-padding w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
                     Courses
@@ -51,7 +51,7 @@
                 </p>
             </div>
 
-            <div class="box w3-center" onclick="meet()">
+            <div class="box w3-center" onclick="location.href = 'meet.html'">
                 <img src="icon_img/chat-1.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
                     Kwasu Meet
@@ -59,7 +59,7 @@
             </div>
         </div>
 
-        <div class="last-dash-content">
+        <div class="last-dash-content" onclick="location.href = 'test.html'">
             <div class="box w3-center">
                 <img src="icon_img/Test.PNG" alt="" class="w3-padding w3-center w3-mrgin-top" height="80%">
                 <p class="w3-center d-text">
@@ -76,23 +76,7 @@
         </div>
 
     </div>
-    <script>
-        function myCourse() {
-            location.href = "courses.html"
-        }
-        function meet() {
-            location.href = "meet.html"
-        }
-        
-    /*   function greet() {
-           var salute = document.getElementById('sir').innerHTML;
-            alert(salute)
-           
-        }
-    */
-      
 
-    </script>
 
 </body>
 

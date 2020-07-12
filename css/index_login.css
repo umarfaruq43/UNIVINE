@@ -134,7 +134,7 @@ label{
 }
 
 .homepage{
-    background-image:linear-gradient(rgba(37,99,51, 0.1), rgb(37,99,51)), url(homepage.webp);
+    background-image:linear-gradient(rgba(37,99,51, 0.1), rgb(37,99,51)), url(../image/To_do.jpg);
     line-height: 40em;
     height: 100vh; 
     background-repeat: no-repeat;
